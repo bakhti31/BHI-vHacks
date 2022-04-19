@@ -180,9 +180,35 @@
 				</div>
 			</div>
 			<div class="more">
-				<a href="#software-details" id="more">Knowing My Stat</a>
+				<a href="#mystat" id="more">Knowing My Stat</a>
 				or
 				<a href="#crew" id="more">Knowing About Crew</a>
+			</div>
+		</section>
+		<section id="mystat">
+			<center><h1>Get Known you Status Here</h1></center>
+			<div class="box-input">
+				<div class="title">
+					<span>Software</span>
+					<span>Software Level</span>
+				</div>
+				<div class="input">
+					<select name="software" id="soft">
+						<option value="fw">Firewall</option>
+						<option value="bp">BankProtection</option>
+						<option value="av">Antivirus</option>
+						<option value="sdk">SoftwareDevelopmentKits</option>
+						<option value="mwk">MalwareKits</option>
+						<option value="bf">Bruteforce</option>
+						<option value="spam">Spam</option>
+						<option value="ips">Ip Spoofing</option>
+						<option value="scan">Scan</option>
+					</select>
+					<input type="number" id="lvl" onkeyup="check()">
+				</div>
+			</div>
+			<div id="output">
+				There your opponent stat
 			</div>
 		</section>
 <!-- 		<section id="botnet">.
@@ -273,5 +299,6 @@
 	- Weekly Tournament: Weekly tournament it's the total score from money tournaments and rush tournaments together from the week, every place in those tournaments will give some score to the weekly tourney. The rewards will be splited for 20 members, every member will receive the same reward. -->
 		</section>
 	</div>
+	<script src="index.js"></script>
 </body>
 </html>
