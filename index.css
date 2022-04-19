@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	background-color: #222;
+	color: white;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+nav	{
+	position: fixed;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	top: 0;
+	left: 0;
+	color: whitesmoke;
+	z-index: 1;
+}
+nav div{
+	padding: 12px;
+}
+nav .logo{
+	font-size: 1.4em;
+}
+header{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 48px auto 0;
+	color: black;
+	height: calc(100vh - 48px);
+}
+header .crew-info{
+	background-color: #eee;
+	display: flex;
+	padding: 24px;
+	margin: 12px;
+	justify-content: center;
+}
+header .image-logo img{
+	/*margin: 0 24px;*/
+	/*border: 1px solid #000;*/
+	overflow: hidden;
+	border-radius: 50%;
+}
+header .history{
+	background-color: #eee;
+	margin: 12px 0 0;
+	padding: 24px;	
+}
+header ul{
+	list-style: inside;
+	padding: 1em 2em;
+
+}
+
+.more{
+	margin: 1.4em 0;
+	font: 2em serif;
+	color: whitesmoke;
+	width: 100%;
+	text-align: center;
+}
+
+section{
+	position: relative;
+	/*margin: 48px auto 0;*/
+	min-height: calc(100vh - 48px);
+	padding: 48px 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#software .vs{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+#software .vs .description{
+	display: none;
+}
+#software .vs div{
+	padding: 12px;
+}
+#software progress{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-progress-value {
+	background-color: rgba(100, 255, 100, 0.5);
+}
